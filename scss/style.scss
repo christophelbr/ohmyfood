@@ -1,0 +1,222 @@
+@import "./utils/variables";
+@import "./pages/chic";
+@import "./pages/delice";
+@import "./pages/note";
+@import "./pages/palette";
+@import "./pages/prochainement";
+
+/*------------- Page d'accueil + general  -------------*/
+
+html {
+	height: 100%;
+}
+main {
+  padding-bottom: 100px;
+  width: 80%;
+  margin: auto;
+}
+body {
+	position: relative;
+	position: relative;
+	min-height: 100%;
+	width: auto;
+	margin: auto;
+}
+h1 {
+	color: $colour-home-txt;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	font-size: 3rem;
+}
+h2 {
+	font-size: 2rem;
+}
+img {
+	width: 100%;
+	border-width: 1px;
+	overflow: hidden;
+	transition: all 450ms;
+}
+.zoom {
+	overflow: hidden;
+	@include box-sh;
+    margin: 50px;
+    img {
+        opacity: 1;
+        transition-duration: 2s;
+        margin: 0 auto;
+        display: block;
+        &:hover {
+            transform: scale(1.2);
+            opacity: 0.5;
+            -webkit-transform:scale(1.2);
+            -moz-transform:scale(1.2);
+            z-index: 0;
+        }
+}
+}
+a {
+	text-decoration: none;
+	color: $colour-home-txt;
+}
+.main-title {
+	text-align: center;
+	background-color: $colour-home-bc;
+}
+.menus {
+	display: flex;
+	flex-direction: row;
+  a img {
+        width: 100%;
+        display: block;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+.bouton {
+	height: 40px;
+	background-color: $colour-home-bc;
+	color: $colour-home-txt;
+	text-align: center;
+	border-radius: 15px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-right: 40px;
+	padding-left: 40px;
+	font-size: 1.5rem;
+}
+footer { 
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: $colour-home-bc;
+	color: rgb(253,203,70);	
+	font-size: 1.5rem;
+}
+#mention {
+	float: left;
+	margin-left: 10px;	
+}
+#contact {
+	float: right;
+	margin-right: 10px;	
+}
+/*------------  wiggle ------------*/
+.wig:hover {
+  animation: wiggle 400ms linear infinite;
+  transform-origin: center bottom;
+}
+@keyframes wiggle{
+  0%, 5%, 15%, 25%, 35%, 45%, 55%, 65%, 75%, 85%, 95% {
+    transform: rotateZ(-5deg);
+  }
+  10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 100% {
+    transform: rotateZ(5deg);
+  }
+}
+/*------------ cartes des menus ----------------*/
+.titre-carte {
+	text-align: center;
+	color: $colour-titres;
+	font-size: 2.5rem;
+}
+.carte {
+	text-align: center;
+	@include box-sh;
+    margin: 30px;
+    h1 {
+        text-align: center;
+        margin-top: 0;
+        padding-top: 20px;
+    }
+    p {
+      margin-left: 150px;
+      margin-right: 150px;
+    }
+}
+.cat {
+	text-align: center;
+	display: flex;
+    flex-direction: row;
+    h2 {
+        text-align: center;
+        margin: auto;
+    }
+    img {
+        height: 15px;
+        width: 290px;
+    }
+}
+.t1 {
+	margin-left: 100px;
+    margin-top: 13px;
+}
+.t2 {
+	margin-top: 13px;
+    margin-right: 100px;
+}
+p {
+	margin-left: 100px;
+	margin-right: 100px;
+	line-height: 200%;
+	font-size: 1.5rem;
+    text-align: left;
+    span {
+        float: right;
+        font-weight: bold;
+    }
+}
+/*------------surlignage des catégories---------*/
+.surlign, .surlign-2-1, .surlign-2-2, .surlign-2-3, .surlign-3-1, .surlign-3-2, .surlign-3-3, .surlign-4 {
+	position: relative;
+}
+.surlign:after, .surlign-2-1:after, .surlign-2-2:after, .surlign-2-3:after, .surlign-3-1:after, .surlign-3-2:after, .surlign-3-3:after, .surlign-4:after {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 3px;
+	display: block;
+	margin-top: 5px;
+	right: 0;
+	transition: width 1s ease;
+	-webkit-transition: width 1s ease;
+}
+.surlign:hover:after, .surlign-2-1:hover:after, .surlign-2-2:hover:after, .surlign-2-3:hover:after, .surlign-3-1:hover:after, .surlign-3-2:hover:after, .surlign-3-3:hover:after, .surlign-4:hover:after {
+	width: 100%;
+	left: 0;
+}
+
+/*---------- media queries -------------*/
+@media only screen and (max-width: 1270px) {
+  .carte p {
+margin-left: 20px;
+margin-right: 20px;
+}
+}
+@media only screen and (max-width: 1180px) {
+.t1 {
+margin-left: 10px;
+}
+.t2 {
+margin-right: 10px;
+}
+}
+@media only screen and (max-width: 999px) {
+  main {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .menus {
+	display: flex;
+	flex-direction:column;
+	margin-bottom: 10px;
+}
+  .zoom {
+  	margin-left: 150px;
+  	margin-right: 150px;
+  }
+}

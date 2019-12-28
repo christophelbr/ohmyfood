@@ -1,0 +1,553 @@
+@charset "UTF-8";
+/*----------- Le chic à la française ----------------*/
+.carte-2-3 p {
+  padding-bottom: 50px;
+}
+
+/*----------- Entrées -----------------*/
+#chic {
+  background-color: #fff5fe;
+  font-family: 'Arapey', serif;
+}
+
+#chic h1 {
+  background: -webkit-gradient(linear, left top, right top, color-stop(30%, #c67412), color-stop(70%, #6e4bcc));
+  background: linear-gradient(to right, #c67412 30%, #6e4bcc 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.5rem;
+}
+
+#chic h1 {
+  font-family: 'Josefin Slab', serif;
+}
+
+.carte-2-1 {
+  color: #c67412;
+}
+
+.surlign-2-1:after {
+  background: #c67412;
+}
+
+.surlign-2-1:hover:after {
+  background: #c67412;
+}
+
+/*-------------- Plats --------------*/
+.carte-2-2 {
+  color: #9e67a5;
+}
+
+.surlign-2-2:after {
+  background: #9e67a5;
+}
+
+.surlign-2-2:hover:after {
+  background: #9e67a5;
+}
+
+/*-------------- Desserts --------------*/
+.carte-2-3 {
+  color: #6e4bcc;
+}
+
+.surlign-2-3:after {
+  background: #6e4bcc;
+}
+
+.surlign-2-3:hover:after {
+  background: #6e4bcc;
+}
+
+/*----------- Le déllice des papilles ----------------*/
+/*----------- Entrées -----------------*/
+#delices {
+  background-color: #edefef;
+  font-family: 'Handlee', cursive;
+  color: black;
+}
+
+#delices h1 {
+  background: -webkit-gradient(linear, left top, right top, color-stop(30%, #0228dd), color-stop(70%, #229dff));
+  background: linear-gradient(to right, #0228dd 30%, #229dff 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.5rem;
+}
+
+#delices h1 {
+  font-family: 'Dancing Script', cursive;
+}
+
+.surlign-3-1:after {
+  background: r #0228dd;
+}
+
+.surlign-3-1:hover:after {
+  background: #0228dd;
+}
+
+/*-------------- Plats --------------*/
+.surlign-3-2:after {
+  background: #0670f3;
+}
+
+.surlign-3-2:hover:after {
+  background: #0670f3;
+}
+
+/*-------------- Desserts --------------*/
+.surlign-3-3:after {
+  background: #229dff;
+}
+
+.surlign-3-3:hover:after {
+  background: #229dff;
+}
+
+.carte-3-3 p {
+  padding-bottom: 50px;
+}
+
+/*----------- La note enchantée ----------------*/
+#notenchante {
+  background-color: #fcdfdb;
+  color: #3d1319;
+  font-family: 'Devonshire', cursive;
+}
+
+#notenchante #musique {
+  height: 100px;
+  width: 105px;
+  margin-top: 50px;
+}
+
+#notenchante h1 {
+  color: #3d1319;
+}
+
+.surlign:after {
+  background: #3d1319;
+}
+
+.surlign:hover:after {
+  background: #3d1319;
+}
+
+.bas {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-bottom: 50px;
+}
+
+.bas img {
+  margin-left: auto;
+  margin-top: 26px;
+  height: 40px;
+  width: 41px;
+}
+
+.bas h2 {
+  margin-right: auto;
+  margin-left: 10px;
+}
+
+/*----------- La palette du goût ----------------*/
+#palette {
+  font-family: 'Caveat', cursive;
+  background-color: #fdfffd;
+  color: black;
+}
+
+#palette h1 {
+  background: -webkit-gradient(linear, left top, right top, color-stop(30%, #3d923a), color-stop(70%, #bfff81));
+  background: linear-gradient(to right, #3d923a 30%, #bfff81 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 2.5rem;
+}
+
+#palette h1 {
+  font-family: 'Kaushan Script', cursive;
+}
+
+.carte-4-1 p, .carte-4-2 p, .carte-4-3 p {
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.carte-4-3 p {
+  padding-bottom: 50px;
+}
+
+.surlign-4:after {
+  background: -webkit-gradient(linear, left top, right top, color-stop(30%, #3d923a), color-stop(70%, #bfff81));
+  background: linear-gradient(to right, #3d923a 30%, #bfff81 70%);
+}
+
+.surlign-4:hover:after {
+  background: -webkit-gradient(linear, left top, right top, color-stop(30%, #3d923a), color-stop(70%, #bfff81));
+  background: linear-gradient(to right, #3d923a 30%, #bfff81 70%);
+}
+
+/* ---------  prochainement  ---------*/
+#loader.background {
+  left: 0;
+  right: 0;
+  z-index: 99999;
+}
+
+#loader .dots {
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -20px 0 0 -50px;
+  z-index: 999999;
+}
+
+#loader .dots span {
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+  background: #579c87;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px 0 0;
+  display: inline-block;
+  border-radius: 50%;
+  animation: wave 2s ease  infinite;
+  -webkit-animation: wave 2s ease infinite;
+}
+
+#loader .dots span:nth-child(1) {
+  animation-delay: 0;
+  -webkit-animation-delay: 0;
+}
+
+#loader .dots span:nth-child(2) {
+  animation-delay: 100ms;
+  -webkit-animation-delay: 100ms;
+}
+
+#loader .dots span:nth-child(3) {
+  animation-delay: 200ms;
+  -webkit-animation-delay: 200ms;
+}
+
+@-webkit-keyframes wave {
+  0%, 40%, 100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    background-color: rgba(87, 156, 135, 0.5);
+  }
+  10% {
+    -webkit-transform: translate(0, -15px);
+    transform: translate(0, -15px);
+    background-color: #579c87;
+  }
+}
+
+@keyframes wave {
+  0%, 40%, 100% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    background-color: rgba(87, 156, 135, 0.5);
+  }
+  10% {
+    -webkit-transform: translate(0, -15px);
+    transform: translate(0, -15px);
+    background-color: #579c87;
+  }
+}
+
+/*------------- Page d'accueil + general  -------------*/
+html {
+  height: 100%;
+}
+
+main {
+  padding-bottom: 100px;
+  width: 80%;
+  margin: auto;
+}
+
+body {
+  position: relative;
+  position: relative;
+  min-height: 100%;
+  width: auto;
+  margin: auto;
+}
+
+h1 {
+  color: #fdcb46;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+img {
+  width: 100%;
+  border-width: 1px;
+  overflow: hidden;
+  -webkit-transition: all 450ms;
+  transition: all 450ms;
+}
+
+.zoom {
+  overflow: hidden;
+  -webkit-box-shadow: 0 2px 18px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 2px 18px 0 rgba(0, 0, 0, 0.3);
+  margin: 50px;
+}
+
+.zoom img {
+  opacity: 1;
+  -webkit-transition-duration: 2s;
+          transition-duration: 2s;
+  margin: 0 auto;
+  display: block;
+}
+
+.zoom img:hover {
+  transform: scale(1.2);
+  opacity: 0.5;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  z-index: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fdcb46;
+}
+
+.main-title {
+  text-align: center;
+  background-color: #579c87;
+}
+
+.menus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.menus a img {
+  width: 100%;
+  display: block;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.bouton {
+  height: 40px;
+  background-color: #579c87;
+  color: #fdcb46;
+  text-align: center;
+  border-radius: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 40px;
+  padding-left: 40px;
+  font-size: 1.5rem;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #579c87;
+  color: #fdcb46;
+  font-size: 1.5rem;
+}
+
+#mention {
+  float: left;
+  margin-left: 10px;
+}
+
+#contact {
+  float: right;
+  margin-right: 10px;
+}
+
+/*------------  wiggle ------------*/
+.wig:hover {
+  -webkit-animation: wiggle 400ms linear infinite;
+          animation: wiggle 400ms linear infinite;
+  -webkit-transform-origin: center bottom;
+          transform-origin: center bottom;
+}
+
+@-webkit-keyframes wiggle {
+  0%, 5%, 15%, 25%, 35%, 45%, 55%, 65%, 75%, 85%, 95% {
+    -webkit-transform: rotateZ(-5deg);
+            transform: rotateZ(-5deg);
+  }
+  10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 100% {
+    -webkit-transform: rotateZ(5deg);
+            transform: rotateZ(5deg);
+  }
+}
+
+@keyframes wiggle {
+  0%, 5%, 15%, 25%, 35%, 45%, 55%, 65%, 75%, 85%, 95% {
+    -webkit-transform: rotateZ(-5deg);
+            transform: rotateZ(-5deg);
+  }
+  10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 100% {
+    -webkit-transform: rotateZ(5deg);
+            transform: rotateZ(5deg);
+  }
+}
+
+/*------------ cartes des menus ----------------*/
+.titre-carte {
+  text-align: center;
+  color: black;
+  font-size: 2.5rem;
+}
+
+.carte {
+  text-align: center;
+  -webkit-box-shadow: 0 2px 18px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 2px 18px 0 rgba(0, 0, 0, 0.3);
+  margin: 30px;
+}
+
+.carte h1 {
+  text-align: center;
+  margin-top: 0;
+  padding-top: 20px;
+}
+
+.carte p {
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.cat {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.cat h2 {
+  text-align: center;
+  margin: auto;
+}
+
+.cat img {
+  height: 15px;
+  width: 290px;
+}
+
+.t1 {
+  margin-left: 100px;
+  margin-top: 13px;
+}
+
+.t2 {
+  margin-top: 13px;
+  margin-right: 100px;
+}
+
+p {
+  margin-left: 100px;
+  margin-right: 100px;
+  line-height: 200%;
+  font-size: 1.5rem;
+  text-align: left;
+}
+
+p span {
+  float: right;
+  font-weight: bold;
+}
+
+/*------------surlignage des catégories---------*/
+.surlign, .surlign-2-1, .surlign-2-2, .surlign-2-3, .surlign-3-1, .surlign-3-2, .surlign-3-3, .surlign-4 {
+  position: relative;
+}
+
+.surlign:after, .surlign-2-1:after, .surlign-2-2:after, .surlign-2-3:after, .surlign-3-1:after, .surlign-3-2:after, .surlign-3-3:after, .surlign-4:after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  transition: width 1s ease;
+  -webkit-transition: width 1s ease;
+}
+
+.surlign:hover:after, .surlign-2-1:hover:after, .surlign-2-2:hover:after, .surlign-2-3:hover:after, .surlign-3-1:hover:after, .surlign-3-2:hover:after, .surlign-3-3:hover:after, .surlign-4:hover:after {
+  width: 100%;
+  left: 0;
+}
+
+/*---------- media queries -------------*/
+@media only screen and (max-width: 1270px) {
+  .carte p {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media only screen and (max-width: 1180px) {
+  .t1 {
+    margin-left: 10px;
+  }
+  .t2 {
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 999px) {
+  main {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .menus {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 10px;
+  }
+  .zoom {
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

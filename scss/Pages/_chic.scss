@@ -1,0 +1,43 @@
+/*----------- Le chic à la française ----------------*/
+.carte-2-3 p {
+	padding-bottom: 50px;
+}
+/*----------- Entrées -----------------*/
+#chic {
+	background-color: $colour-2-bc;
+	font-family: 'Arapey', serif;
+	$colour-2-title: linear-gradient(to right, $colour-2-txt-1 30%, $colour-2-txt-3 70%);
+	@include color-titre-menu($colour-2-txt-1, $colour-2-txt-3);
+	h1 {
+		font-family: 'Josefin Slab', serif;
+	}
+}
+.carte-2-1 {
+	color: $colour-2-txt-1;
+}
+.surlign-2-1:after {
+	background: $colour-2-txt-1;
+}
+.surlign-2-1:hover:after {
+	background: $colour-2-txt-1;
+}
+/*-------------- Plats --------------*/
+.carte-2-2 {
+	color: $colour-2-txt-2;
+}
+.surlign-2-2:after {
+	background: $colour-2-txt-2;
+}
+.surlign-2-2:hover:after {
+	background: $colour-2-txt-2;
+}
+/*-------------- Desserts --------------*/
+.carte-2-3 {
+	color: $colour-2-txt-3;
+}
+.surlign-2-3:after {
+	background: $colour-2-txt-3;
+}
+.surlign-2-3:hover:after {
+	background: $colour-2-txt-3;
+}

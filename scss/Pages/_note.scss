@@ -1,0 +1,38 @@
+/*----------- La note enchantée ----------------*/
+#notenchante {
+	background-color: $colour-1-bc;
+    color: $colour-1-txt;
+    font-family: 'Devonshire', cursive;
+    #musique {
+        height: 100px;
+        width: 105px;
+        margin-top: 50px;
+    }
+    h1 {
+       color: $colour-1-txt;
+    }
+}
+.surlign:after {
+	background: $colour-1-txt;
+}
+.surlign:hover:after {
+	background: $colour-1-txt;
+}
+.bas {
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+    padding-bottom: 50px;
+    img {
+        margin-left: auto;
+        margin-top: 26px;
+        height: 40px;
+        width: 41px;
+    }
+    h2{
+        margin-right: auto;
+        margin-left: 10px;
+    }
+}
+
+

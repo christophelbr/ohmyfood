@@ -1,0 +1,25 @@
+$colour-home-txt: rgb(253,203,70);
+$colour-home-bc: rgb(87,156,135);
+$colour-titres: black;
+
+$colour-1-bc: rgb(252, 223, 219);
+$colour-1-txt: rgb(61, 19, 25);
+
+$colour-2-bc: rgb(255, 245, 254);
+$colour-2-title: linear-gradient(to right, rgb(227, 137, 19) 30%, rgb(145, 93, 252) 70%);
+$colour-2-txt-1: rgb(198,116,18);
+$colour-2-txt-2: rgb(165,103,153);
+$colour-2-txt-3: rgb(118, 115, 124);
+
+$colour-3-bc: rgb(237, 239, 239);
+$colour-3-title: linear-gradient(to right, rgb(30, 60, 221) 30%, rgb(26, 145, 251) 70%);
+$colour-3-effect1: rgb(2,40,221);
+$colour-3-effect2: rgb(6,112,243);
+$colour-3-effect3: rgb(34,157,259);
+
+$colour-4-bc: rgb(253, 255, 253);
+$colour-4-title: linear-gradient(to right, #3d923a 30%, #bfff81 70%);
+
+@mixin box-sh {
+    0, 2px, 18px, 0, rgba(0,0,0,.3);
+} 

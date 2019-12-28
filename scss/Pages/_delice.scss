@@ -1,0 +1,38 @@
+/*----------- Le déllice des papilles ----------------*/
+
+/*----------- Entrées -----------------*/
+#delices {
+	background-color: $colour-3-bc;
+	font-family: 'Handlee', cursive;
+	color: $colour-titres;
+	@include color-titre-menu($colour-3-effect1, $colour-3-effect3);
+	h1 {
+		font-family: 'Dancing Script', cursive;
+	}
+
+}
+.surlign-3-1:after {
+	background: r$colour-3-effect1;
+}
+.surlign-3-1:hover:after {
+	background: $colour-3-effect1;
+}
+/*-------------- Plats --------------*/
+
+.surlign-3-2:after {
+	background: $colour-3-effect2;
+}
+.surlign-3-2:hover:after {
+	background: $colour-3-effect2;
+}
+/*-------------- Desserts --------------*/
+
+.surlign-3-3:after {
+	background: $colour-3-effect3;
+}
+.surlign-3-3:hover:after {
+	background: $colour-3-effect3;
+}
+.carte-3-3 p {
+	padding-bottom: 50px;
+}
