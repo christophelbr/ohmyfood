@@ -220,3 +220,9 @@ margin-right: 10px;
   	margin-right: 150px;
   }
 }
+@media only screen and (max-width: 560px) {
+	.zoom {
+		margin-left: 50px;
+		margin-right: 50px;
+	}
+  }
