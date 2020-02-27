@@ -34,8 +34,6 @@ h2 {
 img {
 	width: 100%;
 	border-width: 1px;
-	overflow: hidden;
-	transition: all 450ms;
 }
 .zoom {
 	overflow: hidden;
@@ -49,9 +47,6 @@ img {
         &:hover {
             transform: scale(1.2);
             opacity: 0.5;
-            -webkit-transform:scale(1.2);
-            -moz-transform:scale(1.2);
-            z-index: 0;
         }
 }
 }
@@ -104,16 +99,29 @@ footer {
 	float: right;
 	margin-right: 10px;	
 }
+
+.menus-tarifs {
+	li {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-right: 90px;
+
+		span {
+			font-size: 1.5rem;
+			font-weight: bold;
+		}
+	}
+}
 /*------------  wiggle ------------*/
 .wig:hover {
   animation: wiggle 400ms linear infinite;
-  transform-origin: center bottom;
 }
 @keyframes wiggle{
-  0%, 5%, 15%, 25%, 35%, 45%, 55%, 65%, 75%, 85%, 95% {
+  0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90% {
     transform: rotateZ(-5deg);
   }
-  10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 100% {
+  5%, 15%, 25%, 35%, 45%, 55%, 65%, 75%, 85%, 95% {
     transform: rotateZ(5deg);
   }
 }
@@ -132,10 +140,6 @@ footer {
         margin-top: 0;
         padding-top: 20px;
     }
-    p {
-      margin-left: 150px;
-      margin-right: 150px;
-    }
 }
 .cat {
 	text-align: center;
@@ -148,6 +152,7 @@ footer {
     img {
         height: 15px;
         width: 290px;
+        overflow: hidden;
     }
 }
 .t1 {
@@ -159,21 +164,20 @@ footer {
     margin-right: 100px;
 }
 p {
-	margin-left: 100px;
+	margin-left: 50px;
 	margin-right: 100px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 	line-height: 200%;
 	font-size: 1.5rem;
     text-align: left;
-    span {
-        float: right;
-        font-weight: bold;
-    }
 }
+
 /*------------surlignage des catégories---------*/
-.surlign, .surlign-2-1, .surlign-2-2, .surlign-2-3, .surlign-3-1, .surlign-3-2, .surlign-3-3, .surlign-4 {
+.surlign {
 	position: relative;
 }
-.surlign:after, .surlign-2-1:after, .surlign-2-2:after, .surlign-2-3:after, .surlign-3-1:after, .surlign-3-2:after, .surlign-3-3:after, .surlign-4:after {
+.surlign:after {
 	content: '';
 	position: absolute;
 	width: 0;
@@ -184,7 +188,7 @@ p {
 	transition: width 1s ease;
 	-webkit-transition: width 1s ease;
 }
-.surlign:hover:after, .surlign-2-1:hover:after, .surlign-2-2:hover:after, .surlign-2-3:hover:after, .surlign-3-1:hover:after, .surlign-3-2:hover:after, .surlign-3-3:hover:after, .surlign-4:hover:after {
+.surlign:hover:after {
 	width: 100%;
 	left: 0;
 }
@@ -220,6 +224,16 @@ margin-right: 10px;
   	margin-right: 150px;
   }
 }
+@media only screen and (max-width: 650px) {
+  .menus-tarifs li {
+  	margin-right: 10px;
+  }
+  .carte p {
+  	margin-left: 0;
+  	margin-right: 5px;
+  }
+}
+
 @media only screen and (max-width: 560px) {
 	.zoom {
 		margin-left: 50px;

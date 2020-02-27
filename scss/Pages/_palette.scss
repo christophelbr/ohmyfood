@@ -1,3 +1,4 @@
+@import "../Utils/variables";
 /*----------- La palette du goût ----------------*/
 #palette {
 	font-family: 'Caveat', cursive;
@@ -8,14 +9,6 @@
 		font-family: 'Kaushan Script', cursive;
 	}
 }
-.carte-4-1 p, .carte-4-2 p, .carte-4-3 p {
-	margin-left: 150px;
-	margin-right: 150px;
-}
-.carte-4-3 p {
-	padding-bottom: 50px;
-}
-
 .surlign-4:after {
 	background: $colour-4-title;
 }

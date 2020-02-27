@@ -1,3 +1,4 @@
+@import "../Utils/variables";
 /*----------- Le déllice des papilles ----------------*/
 
 /*----------- Entrées -----------------*/
@@ -12,7 +13,7 @@
 
 }
 .surlign-3-1:after {
-	background: r$colour-3-effect1;
+	background: $colour-3-effect1;
 }
 .surlign-3-1:hover:after {
 	background: $colour-3-effect1;
@@ -32,7 +33,4 @@
 }
 .surlign-3-3:hover:after {
 	background: $colour-3-effect3;
-}
-.carte-3-3 p {
-	padding-bottom: 50px;
 }
