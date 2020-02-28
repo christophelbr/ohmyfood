@@ -201,8 +201,8 @@
   margin: 0 2px 0 0;
   display: inline-block;
   border-radius: 50%;
-  -webkit-animation: wave 2s ease  infinite;
-          animation: wave 2s ease  infinite;
+  -webkit-animation: wave 2s infinite;
+          animation: wave 2s infinite;
 }
 
 #loader .dots span:nth-child(1) {
