@@ -115,7 +115,7 @@ footer {
 }
 /*------------  wiggle ------------*/
 .wig:hover {
-  animation: wiggle 400ms linear infinite;
+  animation: wiggle 400ms infinite;
 }
 @keyframes wiggle{
   0%, 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90% {

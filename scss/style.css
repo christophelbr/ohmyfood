@@ -384,8 +384,8 @@ footer {
 
 /*------------  wiggle ------------*/
 .wig:hover {
-  -webkit-animation: wiggle 400ms linear infinite;
-          animation: wiggle 400ms linear infinite;
+  -webkit-animation: wiggle 400ms infinite;
+          animation: wiggle 400ms infinite;
 }
 
 @-webkit-keyframes wiggle {
